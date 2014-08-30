@@ -6,6 +6,7 @@ using Airport.Model;
 using System.IO.Compression;
 using System.Data.OleDb;
 using ZipExcelExtractor;
+using PDFReporter;
 
 namespace ConsoleClient
 {
@@ -13,8 +14,10 @@ namespace ConsoleClient
     {
         static void Main(string[] args)
         {
-            Extractor ext = new Extractor("..\\..\\");
-            ext.ExtractFromArchive("TravelInfo.zip");
+            //DataTransferer.TransferDataFromMongoToMsSql();
+            //Extractor ext = new Extractor("..\\..\\");
+            //ext.ExtractFromArchive("TravelInfo.zip");
+            PDFReporterGenerator.CreatePDF();
         }
     }
 }

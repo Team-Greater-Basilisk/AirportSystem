@@ -12,6 +12,10 @@ namespace Airport.Data
         public decimal Price { get; set; }
 
         public DateTime TravelingDate { get; set; }
+
+        public int CustomerId { get; set; }
+        public int DestinationId { get; set; }
+        public int CompanyId { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual Destination Destination { get; set; }
         public virtual Company Company { get; set; }

@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
@@ -70,6 +71,10 @@
     <ProjectReference Include="..\MongoDBController\MongoDBController.csproj">
       <Project>{2f2c50ff-463e-4378-8bc2-edcf05d0c318}</Project>
       <Name>MongoDBController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PDFReporter\PDFReporter.csproj">
+      <Project>{8d0e2c37-7ad2-4d52-9607-ba20a220c936}</Project>
+      <Name>PDFReporter</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZipExcelExtractor\ZipExcelExtractor.csproj">
       <Project>{06efe263-7abd-46ef-97ad-19b48bebe721}</Project>

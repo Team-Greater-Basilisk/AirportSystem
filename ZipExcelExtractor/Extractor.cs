@@ -73,6 +73,7 @@ namespace ZipExcelExtractor
                 ticket.Destination = db.Destinations.Find(destinationId);
                 ticket.TravelingDate = date;
                 ticket.Price = price;
+                
 
                 db.Tickets.Add(ticket);
                 db.SaveChanges();
