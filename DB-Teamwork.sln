@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30626.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.Data", "Airport.Data\Airport.Data.csproj", "{69134F38-65DD-4B9D-B89C-EC8FEF2B8401}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipExcelExtractor", "ZipExcelExtractor\ZipExcelExtractor.csproj", "{06EFE263-7ABD-46EF-97AD-19B48BEBE721}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFReporter", "PDFReporter\PDFReporter.csproj", "{8D0E2C37-7AD2-4D52-9607-BA20A220C936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLCompanyProfitReporter", "XMLCompanyProfitReporter\XMLCompanyProfitReporter.csproj", "{AE845FAA-07B7-45F9-9927-B71993B7E9C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLCompanyProfitReporter.Demo", "XMLCompanyProfitReporter.Demo\XMLCompanyProfitReporter.Demo.csproj", "{05C25B9C-0AD2-4817-A1A8-1BDAAA1077C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{8D0E2C37-7AD2-4D52-9607-BA20A220C936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D0E2C37-7AD2-4D52-9607-BA20A220C936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D0E2C37-7AD2-4D52-9607-BA20A220C936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE845FAA-07B7-45F9-9927-B71993B7E9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE845FAA-07B7-45F9-9927-B71993B7E9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE845FAA-07B7-45F9-9927-B71993B7E9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE845FAA-07B7-45F9-9927-B71993B7E9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C25B9C-0AD2-4817-A1A8-1BDAAA1077C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C25B9C-0AD2-4817-A1A8-1BDAAA1077C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C25B9C-0AD2-4817-A1A8-1BDAAA1077C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C25B9C-0AD2-4817-A1A8-1BDAAA1077C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
