@@ -14,9 +14,9 @@ namespace ConsoleClient
     {
         static void Main(string[] args)
         {
-            //DataTransferer.TransferDataFromMongoToMsSql();/
-            //Extractor ext = new Extractor("..\\..\\");
-            //ext.ExtractFromArchive("TravelInfo.zip");
+            DataTransferer.TransferDataFromMongoToMsSql();
+            Extractor ext = new Extractor("..\\..\\");
+            ext.ExtractFromArchive("TravelInfo.zip");
             PDFReporterGenerator.CreatePDF();
         }
     }

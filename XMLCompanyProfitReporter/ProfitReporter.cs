@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Airport.Model;
 using System.Xml;
+using System.IO;
 namespace XMLCompanyProfitReporter
 {
     public static class ProfitReporter
@@ -45,10 +46,8 @@ namespace XMLCompanyProfitReporter
                     CompanyName = key.CompanyName,
                    Profit = groupEl.Sum(x=>x.TicketPrice)
                 });
-
             using(var xmlReport = XmlTextWriter.Create(fileName))
             {
-                xmlReport.WriteStartDocument();
                 xmlReport.WriteStartElement("profit-reports");
                 foreach (var company in compantyProfitStatistics)
                 {
