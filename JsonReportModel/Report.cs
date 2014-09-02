@@ -8,7 +8,7 @@ namespace JsonReportModel
 {
     public class Report
     {
-        public int RepodrtID { get; set; }
+        public int ReportID { get; set; }
 
         public string From { get; set; }
 

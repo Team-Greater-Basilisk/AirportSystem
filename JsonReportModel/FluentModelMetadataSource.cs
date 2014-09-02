@@ -34,14 +34,14 @@ namespace JsonReportModel
 
             reportMapping.MapType(report => new
                 {
-                    RepodrtID = report.RepodrtID,
+                    RepodrtID = report.ReportID,
                     From = report.From,
                     To = report.To,
                     SelltiketsCount = report.SellTiketsCount,
                     Year = report.Year
                 }).ToTable("Reports");
 
-            reportMapping.HasProperty(r => r.RepodrtID).IsIdentity();
+            reportMapping.HasProperty(r => r.ReportID).IsIdentity();
 
             mappingConfigurations.Add(reportMapping);
 
