@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9DA1A00F-AD35-48A6-8DEB-EF95227AAFCB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{C3DB29A6-307D-47F7-AD30-1066A6C9003C}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JsonReportConsoleClient</RootNamespace>
-    <AssemblyName>JsonReportConsoleClient</AssemblyName>
+    <RootNamespace>JsonAndMysqlReporter</RootNamespace>
+    <AssemblyName>JsonAndMysqlReporter</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -61,12 +58,8 @@
     <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2014.2.711.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Reporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Airport.Data\Airport.Data.csproj">
@@ -77,17 +70,14 @@
       <Project>{ff8b3066-b339-4c66-a13b-f9245961dca9}</Project>
       <Name>Airport.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\JsonAndMysqlReporter\JsonAndMysqlReporter.csproj">
-      <Project>{c3db29a6-307d-47f7-ad30-1066a6c9003c}</Project>
-      <Name>JsonAndMysqlReporter</Name>
-    </ProjectReference>
     <ProjectReference Include="..\JsonReportModel\JsonReportModel.csproj">
       <Project>{6f9c2621-695c-4bde-881b-157dcaa75c07}</Project>
       <Name>JsonReportModel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
