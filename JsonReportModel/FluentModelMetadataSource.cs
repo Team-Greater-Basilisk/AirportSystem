@@ -41,7 +41,7 @@ namespace JsonReportModel
                     Year = report.Year
                 }).ToTable("Reports");
 
-            reportMapping.HasProperty(r => r.ReportID).IsIdentity();
+            reportMapping.HasProperty(r => r.ReportID).IsIdentity(KeyGenerator.Autoinc);
 
             mappingConfigurations.Add(reportMapping);
 
