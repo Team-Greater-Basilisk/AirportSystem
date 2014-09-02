@@ -46,8 +46,14 @@ namespace XMLCompanyProfitReporter
                     CompanyName = key.CompanyName,
                    Profit = groupEl.Sum(x=>x.TicketPrice)
                 });
-            using(var xmlReport = XmlTextWriter.Create(fileName))
+            Encoding encoding = Encoding.GetEncoding("windows-1251");
+            using (var xmlReport = new XmlTextWriter(fileName, encoding))
             {
+                xmlReport.Formatting = Formatting.Indented;
+                xmlReport.IndentChar = '\t';
+                xmlReport.Indentation = 1;
+
+                xmlReport.WriteStartDocument();
                 xmlReport.WriteStartElement("profit-reports");
                 foreach (var company in compantyProfitStatistics)
                 {
