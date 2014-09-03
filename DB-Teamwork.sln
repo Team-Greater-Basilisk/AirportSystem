@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.Data", "Airport.Data\Airport.Data.csproj", "{69134F38-65DD-4B9D-B89C-EC8FEF2B8401}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonReportConsoleClient", "JsonReportConsoleClient\JsonReportConsoleClient.csproj", "{9DA1A00F-AD35-48A6-8DEB-EF95227AAFCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonAndMysqlReporter", "JsonAndMysqlReporter\JsonAndMysqlReporter.csproj", "{C3DB29A6-307D-47F7-AD30-1066A6C9003C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLDataReader", "XMLDataReader\XMLDataReader.csproj", "{72FCB1BC-E37C-46CA-AC7E-11714D48981E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{C3DB29A6-307D-47F7-AD30-1066A6C9003C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3DB29A6-307D-47F7-AD30-1066A6C9003C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3DB29A6-307D-47F7-AD30-1066A6C9003C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FCB1BC-E37C-46CA-AC7E-11714D48981E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FCB1BC-E37C-46CA-AC7E-11714D48981E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FCB1BC-E37C-46CA-AC7E-11714D48981E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FCB1BC-E37C-46CA-AC7E-11714D48981E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76C75431-66C6-4717-8ECC-F60914E5CA24}</ProjectGuid>
+    <ProjectGuid>{72FCB1BC-E37C-46CA-AC7E-11714D48981E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XMLDataReader</RootNamespace>
@@ -48,16 +48,6 @@
   <ItemGroup>
     <Compile Include="XmlDocReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Airport.Data\Airport.Data.csproj">
-      <Project>{69134f38-65dd-4b9d-b89c-ec8fef2b8401}</Project>
-      <Name>Airport.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Airport.Model\Airport.Model.csproj">
-      <Project>{ff8b3066-b339-4c66-a13b-f9245961dca9}</Project>
-      <Name>Airport.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
