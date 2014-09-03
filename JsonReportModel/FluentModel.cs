@@ -7,6 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
 using System;
 using System.Data;
 using System.Linq;
@@ -21,50 +22,50 @@ using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 
 namespace JsonReportModel	
 {
-	public partial class FluentModel : OpenAccessContext, IFluentModelUnitOfWork
-	{
+    public partial class FluentModel : OpenAccessContext, IFluentModelUnitOfWork
+    {
         private static string connectionStringName = @"mysqljsonreport";
 			
-		private static BackendConfiguration backend = GetBackendConfiguration();
+        private static BackendConfiguration backend = GetBackendConfiguration();
 				
-		private static MetadataSource metadataSource = new FluentModelMetadataSource();
+        private static MetadataSource metadataSource = new FluentModelMetadataSource();
 		
-		public FluentModel()
-			:base(connectionStringName, backend, metadataSource)
-		{ }
+        public FluentModel() : base(connectionStringName, backend, metadataSource)
+        {
+        }
 		
-		public FluentModel(string connection)
-			:base(connection, backend, metadataSource)
-		{ }
+        public FluentModel(string connection) : base(connection, backend, metadataSource)
+        {
+        }
 		
-		public FluentModel(BackendConfiguration backendConfiguration)
-			:base(connectionStringName, backendConfiguration, metadataSource)
-		{ }
+        public FluentModel(BackendConfiguration backendConfiguration) : base(connectionStringName, backendConfiguration, metadataSource)
+        {
+        }
 			
-		public FluentModel(string connection, MetadataSource metadataSource)
-			:base(connection, backend, metadataSource)
-		{ }
+        public FluentModel(string connection, MetadataSource metadataSource) : base(connection, backend, metadataSource)
+        {
+        }
 		
-		public FluentModel(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource)
-			:base(connection, backendConfiguration, metadataSource)
-		{ }
+        public FluentModel(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource) : base(connection, backendConfiguration, metadataSource)
+        {
+        }
 			
-		public static BackendConfiguration GetBackendConfiguration()
-		{
-			BackendConfiguration backend = new BackendConfiguration();
-			backend.Backend = "MySql";
-			backend.ProviderName = "MySql.Data.MySqlClient";
+        public static BackendConfiguration GetBackendConfiguration()
+        {
+            BackendConfiguration backend = new BackendConfiguration();
+            backend.Backend = "MySql";
+            backend.ProviderName = "MySql.Data.MySqlClient";
 		
-			CustomizeBackendConfiguration(ref backend);
+            CustomizeBackendConfiguration(ref backend);
 		
-			return backend;
-		}
+            return backend;
+        }
 		
-		/// <summary>
-		/// Allows you to customize the BackendConfiguration of FluentModel.
-		/// </summary>
-		/// <param name="config">The BackendConfiguration of FluentModel.</param>
-		static partial void CustomizeBackendConfiguration(ref BackendConfiguration config);
+        /// <summary>
+        /// Allows you to customize the BackendConfiguration of FluentModel.
+        /// </summary>
+        /// <param name="config">The BackendConfiguration of FluentModel.</param>
+        static partial void CustomizeBackendConfiguration(ref BackendConfiguration config);
 
         public IQueryable<Report> Reports
         {
@@ -73,10 +74,14 @@ namespace JsonReportModel
                 return this.GetAll<Report>();
             }
         }
-	}
+    }
 	
-	public interface IFluentModelUnitOfWork : IUnitOfWork
-	{
-	}
+    public interface IFluentModelUnitOfWork : IUnitOfWork
+    {
+        IQueryable<Report> Reports
+        {
+            get;
+        }
+    }
 }
 #pragma warning restore 1591
