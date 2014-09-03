@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.30626.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.Data", "Airport.Data\Airport.Data.csproj", "{69134F38-65DD-4B9D-B89C-EC8FEF2B8401}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airport.Model", "Airport.Model\Airport.Model.csproj", "{FF8B3066-B339-4C66-A13B-F9245961DCA9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDBController", "MongoDBController\MongoDBController.csproj", "{2F2C50FF-463E-4378-8BC2-EDCF05D0C318}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{9DD4CB09-65DE-42CB-9463-05CF89865904}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipExcelExtractor", "ZipExcelExtractor\ZipExcelExtractor.csproj", "{06EFE263-7ABD-46EF-97AD-19B48BEBE721}"
 EndProject
@@ -27,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonAndMysqlReporter", "Jso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLDataReader", "XMLDataReader\XMLDataReader.csproj", "{72FCB1BC-E37C-46CA-AC7E-11714D48981E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelReporter", "ExcelReporter\ExcelReporter.csproj", "{081703B3-5AC2-4A27-9723-583893CF8436}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{9DD4CB09-65DE-42CB-9463-05CF89865904}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +45,6 @@ Global
 		{2F2C50FF-463E-4378-8BC2-EDCF05D0C318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F2C50FF-463E-4378-8BC2-EDCF05D0C318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F2C50FF-463E-4378-8BC2-EDCF05D0C318}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9DD4CB09-65DE-42CB-9463-05CF89865904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9DD4CB09-65DE-42CB-9463-05CF89865904}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9DD4CB09-65DE-42CB-9463-05CF89865904}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9DD4CB09-65DE-42CB-9463-05CF89865904}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06EFE263-7ABD-46EF-97AD-19B48BEBE721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06EFE263-7ABD-46EF-97AD-19B48BEBE721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06EFE263-7ABD-46EF-97AD-19B48BEBE721}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -83,10 +77,10 @@ Global
 		{72FCB1BC-E37C-46CA-AC7E-11714D48981E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72FCB1BC-E37C-46CA-AC7E-11714D48981E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72FCB1BC-E37C-46CA-AC7E-11714D48981E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{081703B3-5AC2-4A27-9723-583893CF8436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{081703B3-5AC2-4A27-9723-583893CF8436}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{081703B3-5AC2-4A27-9723-583893CF8436}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{081703B3-5AC2-4A27-9723-583893CF8436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD4CB09-65DE-42CB-9463-05CF89865904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD4CB09-65DE-42CB-9463-05CF89865904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD4CB09-65DE-42CB-9463-05CF89865904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD4CB09-65DE-42CB-9463-05CF89865904}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

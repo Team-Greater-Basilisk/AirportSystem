@@ -10,10 +10,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>JsonReportModel</RootNamespace>
     <AssemblyName>JsonReportModel</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <EnhancerAssembly>enhancer.exe</EnhancerAssembly>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,12 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cubski.Data.Infrastructure">
-      <HintPath>..\packages\Cubski.Data.Infrastructure.1.0.0.3\lib\net40\Cubski.Data.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Cubski.Data.Infrastructure.OpenAccess">
-      <HintPath>..\packages\Cubski.Data.Infrastructure.OpenAccess.1.0.0.4\lib\net40\Cubski.Data.Infrastructure.OpenAccess.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,15 +38,8 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telerik.OpenAccess">
-      <HintPath>..\packages\OpenAccess.CodeFirst.2013.1.219.3\lib\Telerik.OpenAccess.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.OpenAccess.35.Extensions">
-      <HintPath>..\packages\OpenAccess.CodeFirst.2013.1.219.3\lib\Telerik.OpenAccess.35.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.OpenAccess.Runtime">
-      <HintPath>..\packages\OpenAccess.CodeFirst.2013.1.219.3\lib\Telerik.OpenAccess.Runtime.dll</HintPath>
-    </Reference>
+    <Reference Include="Telerik.OpenAccess" />
+    <Reference Include="Telerik.OpenAccess.35.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FluentModel.cs" />
@@ -64,14 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Condition="Exists('$(MSBuildExtensionsPath)\OpenAccess.targets')" Project="$(MSBuildExtensionsPath)\OpenAccess.targets" />
-  <Import Project="..\packages\OpenAccess.CodeFirst.2013.1.219.3\tools\enhancer\OpenAccess.targets" Condition="Exists('..\packages\OpenAccess.CodeFirst.2013.1.219.3\tools\enhancer\OpenAccess.targets')" />
-  <Target Name="BeforeBuild">
-    <Error Text="Failed to import OpenAccess.targets from ..\packages\OpenAccess.CodeFirst.2013.1.219.3\tools\enhancer\OpenAccess.targets. Please make sure that the OpenAccess package is available and installed in that location. You can use the &quot;Enable NuGet Package Restore&quot; on your solution, or restore the package manually. You will need to reload the project in order for enhancing to occur. In order to run this on in a build environment you must ensure the build process restores the package before building the solution." Condition="!Exists('..\packages\OpenAccess.CodeFirst.2013.1.219.3\tools\enhancer\OpenAccess.targets')" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
