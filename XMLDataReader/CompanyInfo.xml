@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<companyInfo>
+  <company name="Pesho Travel">
+    <town>Dimitrovgrad</town>
+    <airplains>17</airplains>
+    <employees>380</employees>
+  </company>
+  <company name="Rumen Express">
+    <town>Kaspichan</town>
+    <airplains>7</airplains>
+    <employees>91</employees>
+  </company>
+  <company name="Fast Aviation">
+    <town>Pernik</town>
+    <airplains>13</airplains>
+    <employees>207</employees>
+  </company>
+  <company name="Bai Ganio Airlines">
+    <town>Kyustendil</town>
+    <airplains>5</airplains>
+    <employees>75</employees>
+  </company>
+  <company name="Bulgaria AIR">
+    <town>Sofia</town>
+    <airplains>80</airplains>
+    <employees>638</employees>
+  </company>
+</companyInfo>

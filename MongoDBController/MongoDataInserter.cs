@@ -34,5 +34,10 @@ namespace MongoDBController
             var destinations = this.database.GetCollection("Destinations");
             destinations.Insert(destination);
         }
+        public void AddCompanyInfo(CompanyInfo companyInfo)
+        {
+            var companyInfoCollection = this.database.GetCollection("CompanyInfo");
+            companyInfoCollection.Insert(companyInfo);
+        }
     }
 }

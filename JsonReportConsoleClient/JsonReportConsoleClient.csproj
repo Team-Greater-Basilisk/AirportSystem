@@ -79,10 +79,6 @@
       <Project>{ff8b3066-b339-4c66-a13b-f9245961dca9}</Project>
       <Name>Airport.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\JsonAndMysqlReporter\JsonAndMysqlReporter.csproj">
-      <Project>{c3db29a6-307d-47f7-ad30-1066a6c9003c}</Project>
-      <Name>JsonAndMysqlReporter</Name>
-    </ProjectReference>
     <ProjectReference Include="..\JsonReportModel\JsonReportModel.csproj">
       <Project>{6f9c2621-695c-4bde-881b-157dcaa75c07}</Project>
       <Name>JsonReportModel</Name>

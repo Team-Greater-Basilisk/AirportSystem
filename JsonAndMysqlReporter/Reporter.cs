@@ -64,7 +64,7 @@
                                                                         {
                                                                             Destination = key.Destination,
                                                                             Yuer = key.Year,
-                                                                            TicketCount = groups.Count()
+                                                                            TiketCount = groups.Count()
                                                                         });
 
 
@@ -75,7 +75,7 @@
                     {
                         From = destinationFrom,
                         To = item.Destination,
-                        SellTicketsCount = item.TicketCount,
+                        SellTicketsCount = item.TiketCount,
                         Year = item.Yuer
                     };
 

@@ -22,5 +22,7 @@ namespace Airport.Model
         public DbSet<Destination> Destinations { get; set; }
 
         public DbSet<Ticket> Tickets { get; set; }
+
+        public DbSet<CompanyInfo> CompanyInfo { get; set; }
     }
 }
