@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<tickets>
+  <ticket>
+    <company>Bulgaria Air</company>
+    <customer>Pesho Peshev</customer>
+    <price>115.15</price>
+    <travelling-date>2014-02-02</travelling-date>
+    <destination>Munich</destination>
+  </ticket>
+  <ticket>
+    <company>Wizz air</company>
+    <customer>Gosho Goshev</customer>
+    <price>60.60</price>
+    <travelling-date>2014-08-08</travelling-date>
+    <destination>Barcelona</destination>
+    <ticket>
+      <company>Lufthansa</company>
+      <customer>Vanio Vaniov</customer>
+      <price>160.60</price>
+      <travelling-date>2014-06-06</travelling-date>
+      <destination>Dubai</destination>
+    </ticket>
+  </ticket>
+</tickets>
