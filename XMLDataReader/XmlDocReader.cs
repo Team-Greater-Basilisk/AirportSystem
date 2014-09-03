@@ -13,6 +13,7 @@ namespace XMLDataReader
     {
         public void ReadXmlAndSendToMsSQL(string filename, AirportDbContext dbContext)
         {
+            //
             List<Ticket> ticketsFromXml = this.ReadXML(filename);
 
             foreach (var ticket in ticketsFromXml)
