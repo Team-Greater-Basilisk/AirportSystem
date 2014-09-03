@@ -37,7 +37,7 @@ namespace JsonReportModel
                     RepodrtID = report.ReportID,
                     From = report.From,
                     To = report.To,
-                    SelltiketsCount = report.SellTiketsCount,
+                    SelltiketsCount = report.SellTicketsCount,
                     Year = report.Year
                 }).ToTable("Reports");
 
