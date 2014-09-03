@@ -77,6 +77,10 @@
       <Project>{ff8b3066-b339-4c66-a13b-f9245961dca9}</Project>
       <Name>Airport.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ExcelReporter\ExcelReporter.csproj">
+      <Project>{081703b3-5ac2-4a27-9723-583893cf8436}</Project>
+      <Name>ExcelReporter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JsonReportModel\JsonReportModel.csproj">
       <Project>{6f9c2621-695c-4bde-881b-157dcaa75c07}</Project>
       <Name>JsonReportModel</Name>

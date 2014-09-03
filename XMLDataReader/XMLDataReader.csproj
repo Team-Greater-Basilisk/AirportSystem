@@ -62,6 +62,10 @@
       <Project>{ff8b3066-b339-4c66-a13b-f9245961dca9}</Project>
       <Name>Airport.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MongoDBController\MongoDBController.csproj">
+      <Project>{2f2c50ff-463e-4378-8bc2-edcf05d0c318}</Project>
+      <Name>MongoDBController</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
