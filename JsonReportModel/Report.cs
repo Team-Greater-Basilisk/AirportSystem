@@ -8,7 +8,7 @@
 
         public string To { get; set; }
 
-        public int SellTiketsCount { get; set; }
+        public int SellTicketsCount { get; set; }
 
         public int Year { get; set; }
 

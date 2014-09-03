@@ -1,19 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6F9C2621-695C-4BDE-881B-157DCAA75C07}</ProjectGuid>
+    <ProjectGuid>{081703B3-5AC2-4A27-9723-583893CF8436}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JsonReportModel</RootNamespace>
-    <AssemblyName>JsonReportModel</AssemblyName>
+    <RootNamespace>ExcelReporter</RootNamespace>
+    <AssemblyName>ExcelReporter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <EnhancerAssembly>enhancer.exe</EnhancerAssembly>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,17 +31,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cubski.Data.Infrastructure">
-      <HintPath>..\packages\Cubski.Data.Infrastructure.1.0.0.3\lib\net40\Cubski.Data.Infrastructure.dll</HintPath>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Cubski.Data.Infrastructure.OpenAccess">
-      <HintPath>..\packages\Cubski.Data.Infrastructure.OpenAccess.1.0.0.4\lib\net40\Cubski.Data.Infrastructure.OpenAccess.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.93.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.93.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.93.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.OpenAccess">
@@ -57,17 +65,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FluentModel.cs" />
-    <Compile Include="FluentModelMetadataSource.cs" />
+    <Compile Include="ExcelReporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JsonReportModel\JsonReportModel.csproj">
+      <Project>{6f9c2621-695c-4bde-881b-157dcaa75c07}</Project>
+      <Name>JsonReportModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Condition="Exists('$(MSBuildExtensionsPath)\OpenAccess.targets')" Project="$(MSBuildExtensionsPath)\OpenAccess.targets" />
   <Import Project="..\packages\OpenAccess.CodeFirst.2013.1.219.3\tools\enhancer\OpenAccess.targets" Condition="Exists('..\packages\OpenAccess.CodeFirst.2013.1.219.3\tools\enhancer\OpenAccess.targets')" />
   <Target Name="BeforeBuild">
     <Error Text="Failed to import OpenAccess.targets from ..\packages\OpenAccess.CodeFirst.2013.1.219.3\tools\enhancer\OpenAccess.targets. Please make sure that the OpenAccess package is available and installed in that location. You can use the &quot;Enable NuGet Package Restore&quot; on your solution, or restore the package manually. You will need to reload the project in order for enhancing to occur. In order to run this on in a build environment you must ensure the build process restores the package before building the solution." Condition="!Exists('..\packages\OpenAccess.CodeFirst.2013.1.219.3\tools\enhancer\OpenAccess.targets')" />
