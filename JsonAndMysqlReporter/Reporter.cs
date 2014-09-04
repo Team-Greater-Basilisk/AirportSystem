@@ -1,18 +1,15 @@
 ﻿namespace JsonAndMysqlReporter
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using System.IO;
-
+    using System.Linq;
+    
+    using Newtonsoft.Json;
     using Telerik.OpenAccess;
 
-    using JsonReportModel;
     using Airport.Model;
-    using Newtonsoft.Json;
-
+    using JsonReportModel;
+    
     public class Reporter
     {
         private string directoryPath = "../../JsonReports";
