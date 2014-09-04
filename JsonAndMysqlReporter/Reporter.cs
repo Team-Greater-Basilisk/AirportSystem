@@ -15,7 +15,7 @@
 
     public class Reporter
     {
-        private string directoryPath = "JsonReports";
+        private string directoryPath = "../../JsonReports";
 
         public void MakeReports()
         {
@@ -28,7 +28,7 @@
         {
             List<Report> records = GetRecords();
 
-            using (var context = new JsonReportModel.FluentModel())
+            using (var context = new JsonReportModel.ReportContext())
             {
 
                 for (int i = 0; i < records.Count; i++)
@@ -43,7 +43,7 @@
 
         private List<Report> GetRecords()
         {
-            var destinationFrom = "Sphia";
+            var destinationFrom = "Sofia";
             var reports = new List<Report>();
 
             using (var db = new AirportDbContext())
@@ -83,17 +83,6 @@
                 }
             }
 
-            //for (int i = 0; i < 15; i++)
-            //{
-            //    reports.Add(new Report()
-            //    {
-            //        From = "aasas",
-            //        To = "daya",
-            //        SellTiketsCount = 50,
-            //        Year = 2014
-            //    });
-            //}
-
             return reports;
         }
 
@@ -105,7 +94,7 @@
 
             if (!Directory.Exists(directoryPath))
             {
-                Directory.CreateDirectory("JsonReports");
+                Directory.CreateDirectory("../../JsonReports");
             }
 
             File.WriteAllText(path, json);
@@ -113,7 +102,7 @@
 
         private static void UpdateDatabase()
         {
-            using (var context = new JsonReportModel.FluentModel())
+            using (var context = new JsonReportModel.ReportContext())
             {
                 var schemaHandler = context.GetSchemaHandler();
                 EnsureDB(schemaHandler);

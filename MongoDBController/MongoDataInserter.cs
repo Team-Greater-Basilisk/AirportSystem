@@ -14,7 +14,7 @@ namespace MongoDBController
         public MongoDataInserter()
         {
             var connection = new MongoDBConnector("mongodb://localhost/");
-            this.database = connection.GetDatabase("Test");
+            this.database = connection.GetDatabase("AirportSystem");
         }
 
         public void AddComapny(Company company)

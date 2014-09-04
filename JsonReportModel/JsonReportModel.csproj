@@ -43,8 +43,8 @@
     <Reference Include="Telerik.OpenAccess.35.Extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FluentModel.cs" />
-    <Compile Include="FluentModelMetadataSource.cs" />
+    <Compile Include="ReportContext.cs" />
+    <Compile Include="ReportModelMetadataSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report.cs" />
   </ItemGroup>

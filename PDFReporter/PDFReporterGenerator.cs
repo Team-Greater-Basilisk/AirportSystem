@@ -46,15 +46,6 @@
                     counter++;
                 }
             }
-            String[] data
-            =
-            {
-                "Name;Capital;Continent;Area;Population",
-                "Argentina;Buenos Aires;South America;2777815;32300003",
-                "Bolivia;La Paz;South America;1098575;7300000",
-                "Brazil;Brasilia;South America;8511196;150400000",
-                "Canada;Ottawa;North America;9976147;26500000",
-            };
 
             PdfTable table = new PdfTable();
             table.Style.CellPadding = 2;
@@ -68,9 +59,8 @@
             PdfTrueTypeFont font2 = new PdfTrueTypeFont(new Font("Arial", 9f));
 
             //Save pdf file.
-            doc.SaveToFile("TicketsReport.pdf");
+            doc.SaveToFile("../../TicketsReport.pdf");
             doc.Close();
-            System.Diagnostics.Process.Start("TicketsReport.pdf");
         }
     }
 }

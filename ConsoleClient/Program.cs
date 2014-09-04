@@ -18,19 +18,24 @@ namespace ConsoleClient
         {
             //TransferFromMongoToMSSql
             DataTransferer.TransferDataFromMongoToMsSql();
+            Console.WriteLine("Data successfully transfered from MongoDB to MSSql");
             Extractor ext = new Extractor("..\\..\\");
             //ExtractFromZIP
             ext.ExtractFromArchive("TravelInfo.zip");
+            Console.WriteLine("Data successfully transfered from Excel to MSSql");
             //PDF Reporter
             PDFReporterGenerator.CreatePDF();
+            Console.WriteLine("PDF Reports Created");
             //JSON Reporter
-            Reporter reporter1 = new Reporter();
-            reporter1.MakeReports();
+            Reporter jsonReporter = new Reporter();
+            jsonReporter.MakeReports();
+            Console.WriteLine("JSON Reports Created");
             //ExcelReporter
             var reporter = new ExcelReporter();
             reporter.Report();
             var dataReader = new XMLDataInserter();
             dataReader.ParseXML();
+            Console.WriteLine("Addition info transfered From XML to MongoDB and MSSQL");
         }
     }
 }

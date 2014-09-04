@@ -22,31 +22,31 @@ using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 
 namespace JsonReportModel	
 {
-    public partial class FluentModel : OpenAccessContext, IFluentModelUnitOfWork
+    public partial class ReportContext : OpenAccessContext, IFluentModelUnitOfWork
     {
         private static string connectionStringName = @"mysqljsonreport";
 			
         private static BackendConfiguration backend = GetBackendConfiguration();
 				
-        private static MetadataSource metadataSource = new FluentModelMetadataSource();
+        private static MetadataSource metadataSource = new ReportModelMetadataSource();
 		
-        public FluentModel() : base(connectionStringName, backend, metadataSource)
+        public ReportContext() : base(connectionStringName, backend, metadataSource)
         {
         }
 		
-        public FluentModel(string connection) : base(connection, backend, metadataSource)
+        public ReportContext(string connection) : base(connection, backend, metadataSource)
         {
         }
 		
-        public FluentModel(BackendConfiguration backendConfiguration) : base(connectionStringName, backendConfiguration, metadataSource)
+        public ReportContext(BackendConfiguration backendConfiguration) : base(connectionStringName, backendConfiguration, metadataSource)
         {
         }
 			
-        public FluentModel(string connection, MetadataSource metadataSource) : base(connection, backend, metadataSource)
+        public ReportContext(string connection, MetadataSource metadataSource) : base(connection, backend, metadataSource)
         {
         }
 		
-        public FluentModel(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource) : base(connection, backendConfiguration, metadataSource)
+        public ReportContext(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource) : base(connection, backendConfiguration, metadataSource)
         {
         }
 			

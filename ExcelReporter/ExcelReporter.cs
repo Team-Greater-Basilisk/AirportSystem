@@ -65,7 +65,7 @@
 
         private void WriteFromMySqlInExcel()
         {
-            using (var context = new FluentModel())
+            using (var context = new ReportContext())
             {
                 var connection = new OleDbConnection(ExcelConnectionString);
 
